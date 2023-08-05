@@ -1,0 +1,112 @@
+>Start
+>Stop
+
+1)Algorithm to Multiply two Numbers
+>Start
+>Declare variables a,b,c
+>Read two numbers  and store in a,b
+>Multiply the numbers c=a*b
+>print c
+>Stop
+
+2)Algorithm to find Average of three Subjects
+>Start
+>Declare the variables s1,s2,s3 and avg
+>Read the values of subjects s1,s2,s3.
+>Calculate the avearge  avg=(s1+s2+s3)/3;
+>Print the avg
+>Stop
+
+3)Algorithm to Add Three Numbers
+>Start
+>Declare the variables a,b,c,s
+>Read the values of a,b,c
+>Calculate  sum s=a+b+c
+>Print the result s
+>Stop
+
+4)Algorithm to add n natural numbers
+>Start
+>Declare the variable n,sum
+>Read the value of n
+>Calculate sum=(n*(n+1))/2
+>Print the result sum
+>Stop
+
+5)Algorithm to find factorial of a number
+1.Start
+2.Delare the variables of  i,fact,n.
+3.Read the value of n
+4.Initialize variables i=1,fact=1
+5.if i<=n go to next step 6  otherwise  go to step 8.
+6.calculate fact=fact*i;
+7.Increment i by i=i+1 and go to step 5
+8.print fact
+9.Stop
+
+6)Algorithm to Check the number even or odd
+1.Start
+2.Declare the variable n
+3.Read the value of n
+4.if n%2=0
+Print n is Even
+5.otherwise
+print n is odd
+6.Stop
+
+7)Multiplication table for a given Number
+1.Start
+2.Declare and read the value of n
+3.Initialize i=1
+4.Repeat until i<=10
+  print  "n"+"*"+"i"+"="+n*i
+    increment i=i+1
+5.Stop
+
+8)Algorithm to print odd numbers till n
+1.Start
+2.Declare the values i and n
+3.Read the value of n
+4.Intialize the value of i=1
+5.Repeat until i<=n
+      print i
+       increment i=i+2
+6.Stop
+
+9)How to make Biryani
+1.Start
+2.Wash and soak the the rice in water.
+3.Cut all the vegetables and ready with all spices
+4.place vessel on the stove and  light on the stove.
+5.Add the oil and heat it
+6.  Then add all the vegetables ,spices to it.
+7.Cook for a few Minutes.
+8.Add water.Bring water to boil it and add the soaked rice
+9.Cook on low heat until rice completely cooked.
+10.Once done Off the stove  serve it hot.
+11.Stop
+
+10.Algorithm to check valid Triangle or not
+1.Start 
+2.Initialize the variables a,b,c
+3.Read the values of a,b,c
+4.check a+b>c or b+c>a  or c+a>b
+    print "It is a valid Triangle"
+  otherwise
+   print "It is not a valid Triangle"
+5.Stop
+
+11.Algorithm to find Biggest among three Numbers
+1.Start
+2.Declare the varibles a,b,c
+3.Read the values of a,b,c
+4.if a>b && a>c
+	print a is bigger
+5.Else if b>a && b>c
+	print b is bigger
+6.Otherwise
+	Print c is bigger
+7.Stop
+
+
+         

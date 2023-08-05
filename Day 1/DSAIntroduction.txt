@@ -1,0 +1,103 @@
+DSA(Data Structures and Algorithms):
+	It is an efficient way to store and organise the data.There are different Structures are there like  arrays ,lists ,trees , 
+graphs etc.. Based on need and requirement we can use any of them.It is depend on multiple factors like cost,performance etc..
+
+How to approch a problem.
+1)Read the problem
+2)Analyze a problem
+3)Think of the solution
+4)Pendown the solution
+  Different ways to follow:
+   i.Algorithm
+   ii.FlowChart
+   iii.PseudoCode
+5)We can code the solution
+
+
+
+Algorithm:
+The word Algorithm means   ” A set of finite rules or instructions to be followed in calculations or other problem-solving operations ”.
+
+Use of Algorithm:
+1.Computer Science
+2.Mathematics
+3.Operations Research
+4.Artificial Intelligence
+5.Data Science
+
+"Algorithms can be simple and complex depending on what you want to achieve".
+
+Need of the Algorithms:
+Algorithms are necessary for solving complex problems efficiently.
+They help to automate process and make more reliable,faster and easier to perform.
+Algorithms also enable computers to perform tasks that would be difficult or impossible for humans to do manually.
+
+Characteristics of an Algorithm:
+1)clear and ambiguous.
+2)well defined inputs.
+3)well defined outputs.
+4)Finiteness
+5)Feasible
+6)Language Dependent
+
+Types of Algorithms:
+1)Brute Force Algorithm
+2)Recursive Algorithm
+3)BackTracking Algorithm
+4)Searching Algorithm
+5)Sorting Algorithm
+6)Hashing Algorithm
+7)Divide and Conquer Algorithm
+8)Greedy Algorithm
+9)Dynamic Programming Algorithm
+10)Randomized Algorithm
+
+Advantages of Algorithms:
+It is easy to understand.
+An algorithm is a step-wise representation of a solution to a given problem.
+In an Algorithm the problem is broken down into smaller pieces or steps hence, it is easier for the programmer to convert it into an actual program.
+
+Disadvantages of Algorithms:
+Writing an algorithm takes a long time so it is time-consuming.
+Understanding complex logic through algorithms can be very difficult.
+Branching and Looping statements are difficult to show in Algorithms.
+
+
+FlowChart:
+Flowchart is a graphical representation of an algorithm.It makes use of symbols which are connected among them to indicate the flow of information and processing. 
+
+
+Basic Symbols used in Flowchart Designs
+
+Terminal: The oval symbol indicates Start, Stop and Halt in a program’s logic flow. A pause/halt is generally used in a program logic under some error conditions. Terminal is the first and last symbols in the flowchart. 
+ 
+Input/Output: A parallelogram denotes any function of input/output type. Program instructions that take input from input devices and display output on output devices are indicated with parallelogram in a flowchart. 
+ 
+Processing: A box represents arithmetic instructions. All arithmetic processes such as adding, subtracting, multiplication and division are indicated by action or process symbol. 
+ 
+Diamond symbol represents a decision point. Decision based operations such as yes/no question or true/false are indicated by diamond in flowchart. 
+ 
+Connectors: Whenever flowchart becomes complex or it spreads over more than one page, it is useful to use connectors to avoid any confusions. It is represented by a circle. 
+
+Flow lines: . Arrows represent the direction of flow of control and relationship among different symbols of flowchart. 
+
+Advantages Of FlowChart
+Flowcharts are a better way of communicating the logic of the system.
+Flowcharts help in debugging process.
+With the help of flowcharts programs can be easily analyzed.
+It provides better documentation.
+Easy to understand.
+The flowchart can be reused for inconvenience in the future.
+It helps to provide correct logic.
+
+Disadvantages:
+It is difficult to draw flowcharts for large and complex programs.
+There is no standard to determine the amount of detail.
+Difficult to design the flowcharts.
+It is very difficult to modify the Flowchart.
+Making a flowchart is costly.
+It makes software processes low.
+If changes are done in code, then the flowchart must be redrawn
+
+
+
