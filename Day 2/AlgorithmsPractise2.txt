@@ -1,0 +1,183 @@
+1)Algorithm to find Sum of even Numbers till n
+1.Start
+2.Declare sum,n,i;
+3.Read the value of n
+4.Intialize i=0,sum=0;
+5.Repeat until i<=n
+	sum=sum+i
+	i=i+2
+6.Print sum
+7.Stop
+
+2)Algorithm to check a given number is Prime or composite
+1.Start
+2.Declare n,i,count
+3.Read the value of n 
+4.Intilaize i=1,count=0
+5.if n==1
+	print n is neither prime nor composite.
+	Go to step 8
+6.Otherwise	
+ repeat until i<=n
+      if n%i==0
+	count=count+1
+     i=i+1
+7.if count >2
+    print n is composite number
+otherwise
+ print n is prime Number 
+8.Stop	
+
+3)Algorithm to find largest of n numbers
+1.Start
+2.Declare n,max,i,check
+3.Read n 
+4.intialize  i=1,max=INTEGER.MIN_VALUE;
+5.Repeat until i<=n
+    Read check
+   if(check>max)
+     max=check
+   End If
+    i=i+1
+6.print max
+7.Stop
+
+4)Algorithm to find which type of Triangle
+1.Start
+2.Declare a,b,c
+3.Read a,b,c
+4.If  a+b>c OR b+c>a  OR a+c>b
+  Then
+   if a=b AND b=c  
+   print It is a Equilateral Triangle
+  else if a=b OR b=c OR c=a
+       print It is a Isoceless Triangle
+  otherwise 
+   print  It is a Scalene Triangle
+5.Otherwise
+    It is not a Triangle
+6.Stop
+
+5)Algorithm to find GCD of two Numbers
+1.Start
+2.Declare a,b,gcd,i
+3.Read a,b values
+4.Initilaize gcd=1 and i =1
+5.if   a!=0  AND b!=0
+   Go to Step 8
+6.Otherwise
+      Go to step 7
+ 7.if  a=0
+     gcd=b
+  Otherwise
+     gcd=a
+End if 
+Go to step 9
+
+8.repeat until i<=min(a,b)
+    if a%i=0  AND b%i=0
+         if  i>gcd
+           gcd=i
+    end if
+ end if
+   i=i+1
+9.Print gcd  
+10.Stop
+
+
+6)Algorithm to find LCM of three Numbers
+1.Start
+2.Declare variables a,b,c,n  and lcm
+3.Read variables a,b,c
+4.If  a=0 OR b=0 OR  c=0
+    lcm=0
+   Go to step  7
+  end if
+Otherwise go to next Step
+5.Initialize n=max(a,b,c)
+6.While  (true)
+      if  n%a=0  AND  n%b=0  AND  n%c=0
+        lcm=n
+       break;
+   END if
+     n=n+1
+7.Print lcm
+8.Stop 
+
+7)Prime Numbers Till n
+1.Start
+2.Declare variable n,i
+3.Read variable n
+4.Initialilze i=1
+5.repeat until  i<=n
+      count=0
+         j=1
+           while(j<=i)
+	if(i%j==0)
+	count=count+1
+	End if
+             j=j+1
+          End while
+     if(count==2)
+	print i
+         End if
+     i=i+1
+6.Stop
+
+8)Algorithm to find Fibonacci Series of n numbers
+1.Start
+2.Declare variables firstTerm,secondTerm,fiboTerm,count
+3.Read the count values
+3.Intilaize variables firstTerm=0,SecondTerm=1,i=count-2
+4.print firstTerm,secondTerm
+5. repeat until i=0
+    fiboTerm=firstTerm+secondTerm
+       print fiboTerm
+    firstTerm=secondTerm
+    secondTerm=fiboTerm
+     i=i-1
+
+6.Stop
+
+9)Algorithm to find Fibonacci Series till n
+1.Start
+2.Declare variables firstTerm,secondTerm,fiboTerm,n
+3.Read the count values
+4.Intilaize variables firstTerm=0,SecondTerm=1,i=1
+5.print firstTerm,secondTerm
+6. while(true)
+    fiboTerm=firstTerm+secondTerm
+    print fiboTerm
+	if(fiboTerm>=n)
+	  break
+	End If
+    
+    firstTerm=secondTerm
+  secondTerm=fiboTerm
+     i=i+1
+ EndWhile
+
+7.Stop
+
+10)Algorithm to find given Term is FiboTerm or not
+1.Start
+2.Declare variables firstTerm,secondTerm,fiboTerm,n
+3.Read the n value
+4.Initilaize variables firstTerm=0,SecondTerm=1,i=1
+5. while(true)
+    fiboTerm=firstTerm+secondTerm
+       if(fiboTerm>= n)
+	if(fiboTerm==n)
+	print n is fiboTerm
+	otherwise
+	print n is  not fiboTerm
+	  break
+	End If
+    firstTerm=secondTerm
+    secondTerm=fiboTerm
+     i=i+1
+ EndWhile
+
+6.Stop
+
+
