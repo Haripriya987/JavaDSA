@@ -1,0 +1,27 @@
+Pseudo code is a term often used in programming and algorithm.Different people use different programming languages, and that often becomes a problem.Developers who don't  know that language it would be hard to undestand it.To solve this problem we can use pseudocode.
+"A special language that stands somewhere in between human language and code".
+Pseudo code as the name suggests,is a false code  or a representation of codewhich can be understood by a persons who have basic knowledge on programming language.It mainly writes  the "logical core",which is essence of any program.
+It will omit the the variable declarations,importing libraries etc..
+	It is like blue print for the program.It better describes the idea of an algorithm without complications.It simply describes it in human language.
+It improves the readability.
+The main goal of a pseudo code is to explain what exactly each line of a program should do, hence making the code construction phase easier for the programmer.
+Don't make pseudocode too generalized.
+Don't make the code to abstract.
+
+Tips for how to write a Pseudocode:
+It is Subjective not in Standard
+Use white space and indentation effectively.
+Capitalize key commands if necessary
+write using simple terminology
+Double check your pseudocode for readability and clarity.
+Write only one statement in one line.
+
+Demo Pseudocode:
+
+IF A greater than B
+     print  "A is Big".
+ELSE
+     print "B is Big".
+
+
+

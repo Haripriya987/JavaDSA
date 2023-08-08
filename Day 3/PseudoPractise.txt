@@ -1,0 +1,245 @@
+1)PseudoCode to multiply Two Numbers
+1.Get  a and b
+2.Set result  to  a*b
+3.print result
+
+2)Pseudocode to find avg of Three Subjects
+1.Get  s1,s2 and s3
+2.Set avg to (s1+s2+s3)/3
+3.print avg
+
+3)Pseudocode to add n natural numbers
+1.Get n
+2.Set sum=(n*(n+1))/2
+3.Print sum
+
+4)Pseudocode to find factorial of a number
+1.Get  num
+2.Set i to 1
+3.Set fact to 1
+4. WHILE (i <= num) THEN
+         Set fact=fact*i
+         ADD 1 to i
+    END WHILE
+5.print fact
+
+5)Pseudocode to check the number even or odd
+1.Get num
+2.IF  num%2==0
+        print num is Even
+3.ELSE
+        print num is odd
+   END IF
+ 
+6)Pseudocode to print multiplication table of a given number
+1.Get n
+2.Set i to 1
+3.WHILE i<=10  THEN
+                 print  "n"+"*"+"i"+"="+n*i
+                 ADD 1 to i
+   END WHILE
+
+7)Pseudocode to print odd numbers till n
+1.Get n
+2.FOR i=1 to n  STEP 2   do
+         print i
+    END FOR
+
+8) Pseudocode to Check Valid traingle or not
+1.Get a,b,c values
+2.IF (a+b>c  OR  a+c>b  OR  b+c>a) THEN
+               print It is a valid Triangle
+3.ELSE
+               print It is not a valid Triangle.
+  END IF
+
+9)Pseudocode to find Biggest among three Numbers
+ 1.Get a,b and c values
+ 2.IF  (a>b AND a>c) THEN
+	print a is Big
+ 3.ELSE IF(b>a  AND  b>c)
+	print b is Big
+ 4.ELSE
+	print c is Big
+  END IF
+
+10)Pseudocode to find sum of even numbers till n
+1.Get the value of n
+2.Set  i=0 and sum=0
+3.WHILE (i<=n)  THEN
+	sum=sum+i
+	ADD 2 to i
+   END WHILE
+4.print sum
+
+11)Pseudocode to check a given number is Prime or Composite
+1.Get the value of n
+2.Set i=1 and count=0
+3.IF n<=1
+	print n is neither Prime nor Composite
+	EXIT
+4.ELSE
+	WHILE i<=n THEN
+		IF n%i==0
+			ADD 1 to count
+		END IF
+		ADD 1 to i
+	  END WHILE
+   END IF
+5.IF count >2
+	print n is CompositeNumber
+   ELSE
+	print n is PrimeNumber
+   END IF
+
+12)PseudoCode to find largest of n numbers
+1.Get the value of n
+2.Set i=1 ,max=Integer.MIN_VALUE
+3.WHILE  i<=n  THEN
+	Get the value of a
+	IF (a>max)
+		max=a
+	END IF
+	ADD 1 to i
+  END WHILE
+4.print max
+
+13)Pseudocode to find which type of Triangle.
+1.Get the values of a,b,c
+2.IF (a+b>c  OR  b+c>a   OR   c+a>b)  THEN
+	IF (a==b AND b==c)
+		print  It is a Equilateral Triangle
+	
+	ELSE IF (a==b OR  b==c  OR c==a)
+		print It is a Isoceless Triangle
+
+	ELSE
+		Print It is a Scalene Triangle
+	END IF
+3.ELSE
+	Print It is not a Valid Triangle
+  END IF
+
+14)Pseudocode to find  GCD of Two Numbers
+1.Get  the values of a,b
+2.Set gcd=1 and i=1
+3.IF (a!=0 AND  b!=0)
+	WHILE (i<=min(a,b))  THEN
+		IF  (a%i==0   AND  b%i==0)
+			IF (i>gcd)
+				gcd=i
+			END IF
+		END IF
+		ADD 1 to i
+	END WHILE
+4.ELSE
+	IF  (a=0)
+	 	gcd=b
+	ELSE
+		gcd=a
+	END IF
+  END IF
+5.print gcd
+
+15)Pseudocode to find LCM of three Numbers
+1.Get the values of a,b,c
+2.Set  lcm=1
+3.IF (a=0 OR b=0 OR c=0)
+	lcm=0
+4.ELSE
+	Set n=max(a,b,c)
+	WHILE (true)  
+	                IF (n%a==0 AND n%b==0   AND  n%c==0)
+	                                  lcm=n
+		              break
+	                END IF
+	                ADD 1 to n
+	END WHILE
+  END IF
+5.print lcm
+
+
+16) Pseudocode to print prime Numbers till n
+1.Get the value of n
+2.Set i=1
+3.WHILE (i<=n)   THEN
+	Set count=0
+	Set  j=1
+		WHILE (j<=i)  THEN	
+			IF (i%j==0)
+		    	        ADD 1 to count
+			END IF
+			ADD 1 to j
+		 END WHILE		
+		  IF (count==2)
+			print i
+		   END IF
+	ADD 1 to i
+  END WHILE
+
+17)Pseudocode to print Fibonacci Series of n numbers
+1.Get the value of count
+2.Set  Fterm=0 and Sterm=1
+3. print Fterm,Sterm
+4.Set i=count-2
+5.WHILE (i!=0)  THEN
+	Set Fibo=Fterm+Sterm
+	print Fibo
+	Set Fterm=Sterm
+	Set Sterm =Fibo
+	SUB 1 from i
+  END WHILE
+
+18)Pseudocode to print Fibonacci Series till n
+1.Get the value of n
+2.Set  Fterm=0 and Sterm=1
+3. print Fterm,Sterm
+4.Set i=1
+5.WHILE (true)  THEN
+	Set Fibo=Fterm+Sterm
+	print Fibo
+	IF (Fibo>=n) THEN
+		break
+	END IF
+	Set Fterm=Sterm
+	Set Sterm =Fibo
+	ADD 1 to i
+  END WHILE
+
+19)Pseudocode to find given number is Fibonacci Number or not
+1.Get the value of n
+2.Set  Fterm=0 and Sterm=1
+3.Set i=1
+4.WHILE (true)  THEN
+	Set Fibo=Fterm+Sterm
+	IF (Fibo>=n) THEN
+		IF (Fibo==n)
+			print n is Fibonacci Term
+		ELSE
+			print n is not Fibonacci Term
+		END IF
+		break
+	END IF
+	Set Fterm=Sterm
+	Set Sterm =Fibo
+	ADD 1 to i
+  END WHILE
+
+		 
+	               	
+
+
+		
+	
+	 
+
+	
+
+
+
+	 
+
+
+
+
+  

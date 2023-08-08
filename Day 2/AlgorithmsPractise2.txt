@@ -32,7 +32,7 @@ otherwise
 1.Start
 2.Declare n,max,i,check
 3.Read n 
-4.intialize  i=1,max=INTEGER.MIN_VALUE;
+4.intialize  i=1,max=Integer.MIN_VALUE;
 5.Repeat until i<=n
     Read check
    if(check>max)
@@ -156,7 +156,6 @@ Otherwise go to next Step
   secondTerm=fiboTerm
      i=i+1
  EndWhile
-
 7.Stop
 
 10)Algorithm to find given Term is FiboTerm or not

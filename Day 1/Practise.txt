@@ -60,7 +60,7 @@ print n is odd
 3.Initialize i=1
 4.Repeat until i<=10
   print  "n"+"*"+"i"+"="+n*i
-    increment i=i+1
+    i=i+1
 5.Stop
 
 8)Algorithm to print odd numbers till n
