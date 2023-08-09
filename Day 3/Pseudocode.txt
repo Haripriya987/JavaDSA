@@ -18,10 +18,116 @@ Write only one statement in one line.
 
 Demo Pseudocode:
 
-IF A greater than B
-     print  "A is Big".
+IF  (A>B)   THEN
+     print  ("A is Big")
 ELSE
-     print "B is Big".
+     print ("B is Big")
+
+Variables and Assigning
+Syntax is pretty simple .The name of the variable is on left the value is on right,the assignment operator is in between.
+a=23
+b=32
+c="Hello"
+
+We can also assign the value of one variable to another Variable
+x=1.5
+y=x
+
+
+Input and Output Data
+We will typically avoid input and output.However if we need some external data,we will use this
+a=input()
+b=input()
+
+s="Hello"
+print(s)
+
+Comments
+a=7  //assigning 7 to variable a
+
+Arithmetic Operations
+a=7
+b=2
+
+sum=a+b        //Addition
+dif=a-b	//Subtraction
+ 
+prod=a*b	//Multiplication
+quot=a/b     //Division  it gives  value 3.5
+rem=a mod b      //It gives rem equal to 1
+quot_int=a div b	//It gives Integer Division value equals to 3
+
+Relational and Logical Operators
+a==b
+a!=b
+a>=b
+a<=b
+a>b
+a<b
+
+
+Conditional Statements
+a=10
+b=20
+
+if(a==10 and b==20) or not  (a==20 and b==10)  then:
+	print (a)
+	print (b)
+
+
+a=-5
+if a>0 then
+	print ("Positive")
+else:
+           if (a==0)  then
+	print ("Zero")
+           else :
+	print ("Negative")
+
+Loops
+Loops serve  to perform repeated Calculations.
+We use two kinds of loops FOR,WHILE
+
+i=0
+while i<5:
+	print (i)
+	i=i+1
+
+sum=0
+for i in (1,9)
+	sum=sum+i
+
+print(sum)	
+
+Arrays
+Arrays are used to store  a collection of objects of the same type.
+array[1,10]
+fib=[0,1,1,2,3,5,8]  //Here it starts index from 1
+
+x=fib[4]  //2
+length=len(fib)
+
+for i in  (1,len(fib)):
+	print(fib[i])
 
 
 
+array=[0,4,2,1,5]
+subarray=array[2,4]
+print (subarray) //4,2,1
+
+
+Functions:
+It is a piece of program code that can be accessed from another place in a program
+
+function swap(a,b)
+	temp=a
+	a=b
+	b=temp
+
+c=3
+d=5
+
+swap(c,d)
+print(c)
+print(d)
