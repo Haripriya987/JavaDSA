@@ -1,0 +1,41 @@
+Abstract Data Type(ADT):
+By using a Data Type we can declare a varible.It can store some value.
+Like int,float,boolean ... etc .These are system defined Data Types.
+ADT is a User-Defined Data Type.It is a set of operations.
+In this we can specify the behaviour with the help of some attributes  and functions.
+ADT specifies what is to be done.but how it is not done not specified  that means all implementation Details are hidden.
+
+ex:
+import java.util.List;
+import java.util.ArrayList;
+class StackADT{
+List<Integer> list=new ArrayList<>();
+int size=0;
+void push(int value){
+list.add(value);
+size++;
+}
+void pop(){
+list.remove(--size);
+}
+void peek(){
+System.out.println(list.get(size-1));
+}
+void size(){
+return size;
+}
+}
+
+public class Main{
+   public static void main(String args[]){
+	StackADT st=new StackADT();
+		st.push(10);
+		st.push(35);
+		st.push(65);
+		st.peek();
+		System.out.println(st.size);
+		st.pop();
+		st.size();
+	}
+}
+Here stack have operations like push,pop,peek etc..But we don't know how these operations are implemented.

@@ -3,34 +3,29 @@ import java.util.*;
 public class MainADT {
     public static void main(String[] args){
         DArray arr=new DArray();
+        arr.add(234);
+        arr.addFirst(456);
         arr.add(34);
-        arr.add(48);
-        arr.addFirst(45);
-        arr.add(45);
-        arr.addFirst(79);
+        arr.add(67);
+        arr.addAt(5,78);
         arr.print();
-        System.out.println( arr.size());
-        arr.removeLast();
-        System.out.println(arr.count);
-        arr.addAt(8,108);
-        arr.addAt(1,90);
-        arr.print();
-        System.out.println( arr.size());
         int a[]={34,45,21,54,12};
         arr.intersect(a);
         arr.max();
         arr.min();
         arr.avg();
+        arr.sortArray();
+        arr.print();
 
     }
 }
 class DArray{
-    int[] items;
-    int count;
+   private  int[] items;
+   private int count;
     DArray(){
         items=new int[10];
     }
-    void add(int value){
+    private void resize(){
         //full or not
         int newItems[];
         if(count==items.length){
@@ -40,18 +35,16 @@ class DArray{
             }
             items=newItems;
         }
+
+    }
+   void add(int value){
+        //full or not
+        resize();
         items[count]=value;
         count++;
     }
-    void addFirst(int value){
-        int newItems[];
-        if(count==items.length){
-            newItems =new int[count*2];
-            for(int i=0;i<count;i++){
-                newItems[i]=items[i];
-            }
-            items=newItems;
-        }
+     void addFirst(int value){
+        resize();
         count++;
         for(int i=count;i>=1;i--) {
             items[i] = items[i - 1];
@@ -59,7 +52,7 @@ class DArray{
 
         items[0]=value;
     }
-    void search(int element){
+      void search(int element){
         int a=0;
         for(int i=0;i<count;i++){
             if(items[i]==element){
@@ -70,7 +63,7 @@ class DArray{
         if(a==0)
             System.out.println("Element not found in array");
     }
-    void atIndex(int index){
+      void atIndex(int index){
         if(count>=index)
             System.out.println("Element at this index is : "+items[index]);
         else
@@ -78,7 +71,7 @@ class DArray{
     }
 
 
-    void print(){
+      void print(){
         System.out.print("[");
         for(int i=0;i< count;i++)
             System.out.print(items[i]+" ");
@@ -86,22 +79,22 @@ class DArray{
 
     }
 
-    void removeLast(){
+     void removeLast(){
         count--;
 
     }
 
-    void removeFirst(){
+     void removeFirst(){
         for(int i=1;i<count;i--){
             items[i-1]=items[i];
         }
         count--;
     }
-    int size(){
+     int size(){
         return count;
 
     }
-    void max(){
+     void max(){
         int m=items[0];
         for(int i=0;i<count;i++)
             if(items[i]>m)
@@ -109,7 +102,7 @@ class DArray{
 
         System.out.println("Maximum element in an array is : "+m);
     }
-    void min(){
+      void min(){
         int m=items[0];
         for(int i=0;i<count;i++)
             if(items[i]<m)
@@ -118,7 +111,7 @@ class DArray{
         System.out.println("Minimum element in an array is : "+m);
 
     }
-   void intersect(int arr[]){
+     void intersect(int arr[]){
         System.out.print("common elements are " +"[");
         for(int i=0;i<count;i++){
             int z=items[i];
@@ -130,7 +123,7 @@ class DArray{
         }
         System.out.println("]");
    }
-   void avg(){
+     void avg(){
         int sum=0;
         for(int i=0;i<count;i++)
             sum+=items[i];
@@ -139,10 +132,13 @@ class DArray{
         System.out.println(avg);
 
    }
-    void addAt(int index,int n){
+      void addAt(int index,int n){
         int newI[];
+
             if(index>=count) {
                 int diff = index - count;
+                resize();
+
                 if (count == items.length) {
                     newI = new int[count * 2 + diff];
                     for (int i = 0; i < count; i++) {
@@ -163,7 +159,19 @@ class DArray{
 
           }
         }
-        void clear(){
+      void sortArray(){
+        int[] temp=new int[count];
+        for(int i=0;i<count;i++){
+            temp[i]=items[i];
+        }
+
+        Arrays.sort(temp);
+        System.out.println(Arrays.toString(temp));
+        }
+     void clear(){
         count=0;
+        }
+      void trimToSize(){
+            items=Arrays.copyOf(items,count);
         }
     }
