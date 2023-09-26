@@ -1,0 +1,24 @@
+Definition of Infix, Postfix, and Prefix
+Infix: The typical mathematical form of expression that we  generally use  is known as infix notation. In infix form, an operator is written in between two operands.
+
+For example: 
+An expression in the form of A * ( B + C ) / D is in infix form. This expression can be simply decoded as: Add B and C, then multiply the result by A, and then divide it by D for the final answer.”
+
+Prefix: In prefix expression, an operator is written before its operands. This notation is also known as “Polish notation”.
+
+For example, The above expression can be written in the prefix form as / * A + B C D. This type of expression cannot be simply decoded as infix expressions.
+
+Postfix: In postfix expression, an operator is written after its operands. This notation is also known as “Reverse Polish notation”.
+
+For example, The above expression can be written in the postfix form as A B C + * D /. This type of expression cannot be simply decoded as infix expressions.
+
+=>Prefix Notations are needed whe we require operators before the operands while postfix notations are needed after the operands.
+=>Prefix notations and Postfix notations can be evaluated faster than the infix notation.
+=>Prefix and Postfix notations are easier to parse for a machine.
+=>With prefix and postfix notation there is never any question like operator precedence.
+=>There is no issue of left-right associativity.
+
+
+
+
+
