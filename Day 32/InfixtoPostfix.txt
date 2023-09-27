@@ -1,0 +1,34 @@
+Infix to Postfix
+(a+(b*c)) => (a+(bc*))  =>  (a(bc*)+)  =>  abc*+
+
+Infix to Prefix
+(a+(b*c)) => (a+(*bc))  =>  (+a(*bc))  => +a*bc
+
+Infix to Postfix
+(a+b)*c  =>  (ab+)*c  =>  ab+c*
+
+Infix to Prefix
+(a+b)*c  => (+ab)*c  =>  *+abc
+
+Infix to Postfix
+a+b*(c-d)/e
+(a+(b*(c-d))/e)
+(a+(b*(cd-))/e)
+(a+((bcd-)*)/e)
+(a+bcd-*e/)
+abcd-*e/+
+
+
+PseudoCode:
+1.Create empty Stack
+2.Iterate through the expression a+(b*c)
+3.If c is operand - output it
+(  : push to the stack
+ ) : pop from Stack until opening bracket
+else
+ if stack is empty
+    push it to the stack
+ else
+    compare with peek
+    higher precend push
+    lower == precend => pop& add to result
