@@ -1,0 +1,125 @@
+//Sort a linked List of 0's,1's,2's
+
+public class SortLinkedList {
+    public static void main(String[] args){
+        LinkedListDemo ls=new LinkedListDemo();
+        ls.addLast(0);
+        ls.addLast(1);
+        ls.addFirst(1);
+        ls.addLast(2);
+        ls.addFirst(1);
+        ls.addLast(0);
+        ls.addFirst(2);
+        ls.print(ls.head);
+        ls.sortList012(ls.head);
+        ls.print(ls.head);
+
+
+    }
+
+}
+
+class LinkedListDemo {
+    Node head;
+    int size;
+
+    class Node {
+        int data;
+        Node next;
+
+        Node() {
+
+        }
+
+        Node(int value) {
+            this.data = value;
+        }
+    }
+
+    void addFirst(int value) {
+        Node node = new Node(value);
+        size++;
+        if (head == null) {
+            head = node;
+        } else {
+            node.next = head;
+            head = node;
+        }
+    }
+
+    void addLast(int value) {
+        Node node = new Node(value);
+        size++;
+        if (head == null) {
+            head = node;
+        } else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = node;
+        }
+    }
+
+    void removeFirst() {
+        if (head == null) {
+            throw new IllegalStateException("List is Empty");
+        } else if (head.next == null) {
+            head = null;
+        } else {
+            head = head.next;
+        }
+
+        size--;
+    }
+
+    void removeLast() {
+        if (head == null) {
+            throw new IllegalStateException("List is Empty");
+        } else if (head.next == null) {
+            head = null;
+        } else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = null;
+        }
+        size--;
+    }
+
+    int sizeLL() {
+        return size;
+    }
+
+    void print(Node h) {
+        Node temp = h;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+    void sortList012(Node demo){
+        int[] arr=new int[3];
+        Node temp=demo;
+        while(temp!=null){
+            arr[temp.data]++;
+            temp=temp.next;
+        }
+        Node ptr=demo;
+        int i=0;
+        while(ptr!=null){
+            if(arr[i]==0)
+                i++;
+            else{
+                ptr.data=i;
+                arr[i]--;
+                ptr=ptr.next;
+
+            }
+        }
+
+    }
+
+}
