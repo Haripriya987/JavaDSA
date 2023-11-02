@@ -1,0 +1,25 @@
+Tree:
+	It is a hierarchical Data Structure in which collection of elements known as nodes are connected to each other via edges .	It is a non linear Data Structure.
+		Each child node may have one or more child nodes of its own, forming a branching structure. The nodes at the bottom of the tree, which do not have any child nodes, are called leaf nodes.
+	In a tree each node have maximum two children are called as Binary Tree.
+	Trees provide an efficient way to search for data.for example in a binary  search tree ,searching for a value takes time proportional to the logarithm of the number of elements
+
+Node at top level is called as root.
+Nodes which does not have any children are called as Leaf Nodes.
+
+Advantages of Tree DataStructure:
+Hierarchical Structure: Trees are used to model hierarchical structures, such as the file system in a computer or the organizational chart in a company. The tree structure allows for a natural representation of parent-child relationships, making it easy to understand and visualize the data.
+Searching Efficiency: Trees provide an efficient way to search for data. For example, in a binary search tree, searching for a value takes time proportional to the logarithm of the number of elements, which is much faster than searching in a linear data structure like an array or a linked list.
+Sorting: Trees can be used to sort data efficiently. For example, in a self-balancing binary search tree, the data is automatically sorted as it is inserted into the tree, making it easy to find the minimum, maximum, and other values in the tree.
+Dynamic Data: Trees are dynamic data structures, which means that they can grow and shrink as needed. This makes them well-suited for applications where the data changes frequently, such as in real-time systems.
+Efficient Insertion and Deletion: Trees provide efficient algorithms for inserting and deleting data, which is important in many applications where data needs to be added or removed frequently.
+Easy to Implement: Trees are relatively easy to implement, especially when compared to other data structures like graphs. This makes them a popular choice for many programming projects.
+
+Applications:
+To store hierarchical data like folder structure.
+BST allows fast search,insert,delete on a sorted data.
+In server like DNS
+For indexing in Database
+In Machine Learning Algorithms
+
+			
